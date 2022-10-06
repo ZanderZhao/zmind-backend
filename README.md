@@ -1,11 +1,6 @@
-前端项目：[ZMind思维导图](https://github.com/zyascend/ZMindMap) 的Node后端
-
-### Features
-- Koa
-- Qiniu
-- Mongodb
-- redis
-- JWT
+前端项目：[知更](https://github.com/seasnakes/ZhiGeng) 的Node后端
+## 架构图
+![arch](./asset/arch.png)
 
 ## 下载安装使用教程
 * 前置准备
