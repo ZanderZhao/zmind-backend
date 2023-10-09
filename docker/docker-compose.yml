@@ -1,18 +1,25 @@
 version: '3'
 services:
   zmind-backend:
-    image: zanderzhao/zmind-backend
+    # container_name: zmind-backend
+    image: zanderzhao/zmind-backend #:v0.0.6
+    image: zmind-backend
     ports:
-      - "8920:8080"  # 如果你的App需要公开端口，可以映射到宿主机
+      - "8920:3003"  # 如果你的App需要公开端口，可以映射到宿主机
     links:
       - zmind-backend-redis
       - zmind-backend-mongodb
+    environment:
+      # - DB_URL=mongodb://localhost:27017/mydb
+      - NODE_ENV=production
 
   zmind-backend-redis:
+    container_name: zmind-backend-redis
     image: redis:latest
     # 6379
 
   zmind-backend-mongodb:
+    container_name: zmind-backend-mongodb
     image: mongo:latest
 
     # 27017
