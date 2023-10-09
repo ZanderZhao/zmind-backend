@@ -29,10 +29,10 @@ CMD [ "npm", "run", "serve" ]
 #     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/apk/* && \
 #     rm -rf /root/.npm /root/.node-gyp /root/.gnupg /usr/share/man /tmp/*
 
-# docker build -t zmind-frontend .
-# docker run -p 4000:8080 zmind-frontend
+# docker build -t zmind-backend .
+# docker run -p 4000:8080 zmind-backend
 # docker login
 # docker images
-# docker tag zmind-frontend:latest zanderzhao/zmind-frontend:v0.0.2
-# docker push zanderzhao/zmind-frontend:v0.0.2
+# docker tag zmind-backend:latest zanderzhao/zmind-backend:v0.0.2
+# docker push zanderzhao/zmind-backend:v0.0.2
 # echo -n mypw. | docker login --username zanderzhao --password-stdin
