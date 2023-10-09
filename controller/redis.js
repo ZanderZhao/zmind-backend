@@ -4,7 +4,8 @@ class Redis {
   constructor() {
     console.log('constructor')
     this.client = redis.createClient({
-      host: '127.0.0.1',
+      // host: '127.0.0.1',
+      host: 'zmind-backend-redis',
       port: '6379',
       ttl: 5 * 60 * 1000
     })

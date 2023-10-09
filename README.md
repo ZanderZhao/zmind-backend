@@ -1,4 +1,4 @@
-前端项目：[知更](https://github.com/seasnakes/ZhiGeng) 的Node后端
+前端项目：[ZMind](https://github.com/ZanderZhao/zmind-backend) 的Node后端
 ## 架构图
 ![arch](./asset/arch.png)
 

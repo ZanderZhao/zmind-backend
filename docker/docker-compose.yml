@@ -1,0 +1,18 @@
+version: '3'
+services:
+  zmind-backend:
+    image: zanderzhao/zmind-backend
+    ports:
+      - "8920:8080"  # 如果你的App需要公开端口，可以映射到宿主机
+    links:
+      - zmind-backend-redis
+      - zmind-backend-mongodb
+
+  zmind-backend-redis:
+    image: redis:latest
+    # 6379
+
+  zmind-backend-mongodb:
+    image: mongo:latest
+
+    # 27017

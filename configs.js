@@ -1,6 +1,7 @@
 module.exports = {
   serverPort: 3003,
-  dbUrl: 'mongodb://127.0.0.1:27017/mindmap',
+  // dbUrl: 'mongodb://127.0.0.1:27017/mindmap',
+  dbUrl: 'mongodb://zmind-backend-mongodb:27017/mindmap',
   tokenSecret: 'mindmap-secret-zz',
   defaultAvatar: 'https://cdn.kimjisoo.cn/pic/default.jpg',
   // ！！！【使用自己的七牛云配置，否则可能面临数据丢失的风险】！！！
