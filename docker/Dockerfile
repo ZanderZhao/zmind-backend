@@ -6,6 +6,7 @@ WORKDIR /app
 
 # 克隆存储库
 RUN git clone --depth=1 https://github.com/ZanderZhao/zmind-backend.git .  && \
+    ls && \
     apt-get update -y && \
     apt-get upgrade -y && \
     npm ci && \
